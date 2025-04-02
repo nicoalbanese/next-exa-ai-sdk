@@ -10,7 +10,7 @@ export const maxDuration = 30;
 export const exa = new Exa(process.env.EXA_API_KEY);
 
 export const webSearch = tool({
-  description: "Search the web for information about a company",
+  description: "Search the web for information",
   parameters: z.object({
     query: z.string().min(1).max(100).describe("The search query"),
   }),
